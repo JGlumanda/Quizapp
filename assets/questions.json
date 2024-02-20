@@ -1,0 +1,755 @@
+{
+  "Ausbildung": [
+    {
+      "Fachinformatiker": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Kaufmann": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Industriekaufmann": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Verkäufer": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "KaufmannfürBüromanagement": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    }
+  ],
+  "Studium": [
+    {
+      "Informatik": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Wirtschaftsinformatik": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Betriebswirtschaftslehre": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Wirtschaftsingenieurwesen": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Informatik": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Wirtschaftsinformatik": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Betriebswirtschaftslehre": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Wirtschaftsingenieurwesen": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Informatik": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Wirtschaftsinformatik": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Betriebswirtschaftslehre": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    },
+    {
+      "Wirtschaftsingenieurwesen": [
+        {
+          "Question": "Was ist ein Algorithmus?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Programm",
+            "Ein Computer",
+            "Ein Netzwerk"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Computer?",
+          "Options": [
+            "Ein Gerät, das Daten verarbeitet",
+            "Ein Algorithmus",
+            "Ein Netzwerk",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Netzwerk?",
+          "Options": [
+            "Eine Verbindung von Computern",
+            "Ein Algorithmus",
+            "Ein Computer",
+            "Ein Programm"
+          ],
+          "CorrectAnswerIndex": "0"
+        },
+        {
+          "Question": "Was ist ein Programm?",
+          "Options": [
+            "Eine Folge von Anweisungen, die ein Problem lösen",
+            "Ein Computer",
+            "Ein Netzwerk",
+            "Ein Algorithmus"
+          ],
+          "CorrectAnswerIndex": "0"
+        }
+      ]
+    }
+
+  ]
+}

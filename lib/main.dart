@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/page_splashscreen.dart';
+import 'package:quizapp/bi_logic/QuizManager.dart';
+import 'package:quizapp/pages/page_splashscreen.dart';
 import 'package:quizapp/theme/theme.dart';
 
-import 'page_Home.dart';
+import 'pages/page_Home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
               future: initializeApp(),
               builder: (BuildContext context, AsyncSnapshot<void> snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
+
                   return const Splashscreen();
                 } else {
                   return const CareerSelecter();
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
   }
 
   Future<bool> initializeApp() async {
-    await Future<void>.delayed(const Duration(seconds: 2));
+    await QuizManager().loadQuestions();
     return true;
   }
 }

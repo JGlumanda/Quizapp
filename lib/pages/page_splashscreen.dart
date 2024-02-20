@@ -9,7 +9,7 @@ class Splashscreen extends StatelessWidget {
       child: AspectRatio(
         aspectRatio: 200 / 100,
         child: Image(
-          image: AssetImage('images/uhlmann_logo.png'),
+          image: AssetImage('assets/images/uhlmann_logo.png'),
         ),
       ),
     );
