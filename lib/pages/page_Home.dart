@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/page_Ausbildung.dart';
-import 'package:quizapp/page_Studium.dart';
+import 'package:quizapp/pages/page_Ausbildung.dart';
+import 'package:quizapp/pages/page_Studium.dart';
 
 class CareerSelecter extends StatelessWidget {
   const CareerSelecter({super.key});
@@ -27,14 +27,14 @@ class CareerSelecter extends StatelessWidget {
 
   Expanded buildAusbildungButton(BuildContext context) {
     return Expanded(
-      child: GestureDetector(
-        onTap: () {
-          Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => const AusbildungSelector()));
-        },
-        child: Card(
+      child: Card(
+        child: InkWell(
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => AusbildungSelector()));
+          },
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: FittedBox(
@@ -53,14 +53,14 @@ class CareerSelecter extends StatelessWidget {
 
   Expanded buildStudiumButton(BuildContext context) {
     return Expanded(
-      child: GestureDetector(
-        onTap: () {
-          Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => StudiumSelector()));
-        },
-        child: Card(
+      child: Card(
+        child: InkWell(
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => StudiumSelector()));
+          },
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: FittedBox(
