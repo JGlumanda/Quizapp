@@ -10,7 +10,7 @@ class QuestionPage extends StatefulWidget {
 }
 
 class _QuestionPageState extends State<QuestionPage> {
-  int selectedAnswer = 0;
+  int selectedAnswer = -1;
   int currentQuestion = 0;
   int correctAnswers = 0;
   bool showCorrectAnswer = false;
@@ -92,17 +92,7 @@ class _QuestionPageState extends State<QuestionPage> {
       child: Padding(
         padding: const EdgeInsets.all(32.0),
         child: Card(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            side: BorderSide(
-              color: (selectedAnswer == i)
-                  ? Theme.of(context).primaryColor
-                  : (showCorrectAnswer && i == 0)
-                      ? Colors.green
-                      : Colors.red,
-              width: 2,
-            ),
-          ),
+          shape: getShape(i),
           child: InkWell(
             borderRadius: BorderRadius.circular(10),
             onTap: () {
@@ -140,5 +130,44 @@ class _QuestionPageState extends State<QuestionPage> {
         value: currentQuestion / 10,
       ),
     );
+  }
+
+  getShape(int i) {
+    if (showCorrectAnswer) {
+      if (i == correctAnswers) {
+        return RoundedRectangleBorder(
+          side: const BorderSide(
+            color: Colors.green,
+            width: 2,
+          ),
+          borderRadius: BorderRadius.circular(10),
+        );
+      } else {
+        return RoundedRectangleBorder(
+          side: const BorderSide(
+            color: Colors.red,
+            width: 2,
+          ),
+          borderRadius: BorderRadius.circular(10),
+        );
+      }
+    } else if (selectedAnswer == i) {
+      return RoundedRectangleBorder(
+        side: BorderSide(
+          color: Theme.of(context).primaryColor,
+          width: 2,
+        ),
+        borderRadius: BorderRadius.circular(10),
+      );
+    } else {
+      return RoundedRectangleBorder(
+        side: const BorderSide(
+          color: Colors.transparent,
+          width: 2,
+        ),
+        borderRadius: BorderRadius.circular(10),
+      );
+
+    }
   }
 }
