@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/wigets/widget_UhlmannHeader.dart';
 
 import '../bi_logic/QuizManager.dart';
 
@@ -16,51 +17,7 @@ class AusbildungSelector extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         // Aligns the widgets along the cross axis (horizontal)
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(32.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Expanded(
-                  child: Image(
-                    image: AssetImage('assets/images/uhlmann_logo.png'),
-                  ),
-                ),
-                Flexible(
-                  child: SizedBox(
-                    height: 100,
-                    width: 400,
-                    child: Card(
-                      child: InkWell(
-                        onTap: () {
-                          Navigator.of(context).popUntil((route) => route.isFirst);
-                        },
-                        borderRadius: BorderRadius.circular(10),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: FittedBox(
-                            fit: BoxFit.contain,
-                            child: Text(
-                              'Quiz neu starten',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: Theme.of(context).primaryColor,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                const Expanded(
-                  child: Image(
-                    image: AssetImage('assets/images/uhlmann_logo.png'),
-                  ),
-                )
-              ],
-            ),
-          ),
+          const UhlmannHeader(showBackButton: true),
           Expanded(
             child: Align(
               alignment: Alignment.center,

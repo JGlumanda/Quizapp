@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/pages/page_Ausbildung.dart';
 import 'package:quizapp/pages/page_Studium.dart';
+import 'package:quizapp/wigets/widget_UhlmannHeader.dart';
 
 class CareerSelecter extends StatelessWidget {
   const CareerSelecter({super.key});
@@ -9,19 +10,26 @@ class CareerSelecter extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+          child: Column(
             children: [
-              buildAusbildungButton(context),
-              const SizedBox(width: 100),
-              buildStudiumButton(context),
-            ],
+              const UhlmannHeader(showBackButton: false),
+              Flexible(
+                child: Padding(
+                  padding: const EdgeInsets.all(128),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      buildAusbildungButton(context),
+                      const SizedBox(width: 100),
+                      buildStudiumButton(context),
+                    ],
+                  ),
+                ),
+              ),
+            ]
           ),
         ),
-      ),
     );
   }
 
