@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Engineer",
+    "imageUrl": "assets/images/engineer.png",
+    "introText": "Engineers design, build, and maintain systems and structures.",
+    "details": [
+      {
+        "type": "image",
+        "content": "assets/images/engineer_work.png"
+      },
+      {
+        "type": "text",
+        "content": "Engineers apply scientific and mathematical principles to solve problems."
+      },
+      {
+        "type": "text",
+        "content": "They work in a variety of fields including civil, mechanical, electrical, and software engineering."
+      },
+      {
+        "type": "image",
+        "content": "assets/images/engineer_project.png"
+      }
+    ],
+    "questions": [
+      {
+        "questionText": "What does an engineerasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadadasdsaasdengineerasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadadasdsaasdengineerasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadadasdsaasd do?",
+        "answers": ["Ich bin ein langer Text um eine Antwort zu beschreiben damit ich den worst case testen kann wie lang eine Antwortmöglichkeit sein kann.", "Teaches", "Heals", "Cooks"],
+        "correctAnswer": "Ich bin ein langer Text um eine Antwort zu beschreiben damit ich den worst case testen kann wie lang eine Antwortmöglichkeit sein kann."
+      },
+      {
+        "questionText": "Which field does not typically involve engineering?",
+        "answers": ["Civil", "Mechanical", "Electrical", "Literature"],
+        "correctAnswer": "Literature"
+      }
+    ]
+  },
+  {
+    "name": "Doctor",
+    "imageUrl": "assets/images/doctor.png",
+    "introText": "Doctors diagnose and treat illnesses, and provide medical care to patients.",
+    "details": [
+      {
+        "type": "image",
+        "content": "assets/images/doctor_clinic.png"
+      },
+      {
+        "type": "text",
+        "content": "Doctors can specialize in various fields such as cardiology, neurology, and pediatrics."
+      },
+      {
+        "type": "text",
+        "content": "They work in hospitals, clinics, and private practices."
+      },
+      {
+        "type": "image",
+        "content": "assets/images/doctor_surgery.png"
+      }
+    ],
+    "questions": [
+      {
+        "questionText": "What is the primary role of a doctor?",
+        "answers": ["Design buildings", "Treat patients", "Write code", "Manage finances"],
+        "correctAnswer": "Treat patients"
+      },
+      {
+        "questionText": "Which of the following is a medical specialty?",
+        "answers": ["Cardiology", "Engineering", "Architecture", "Law"],
+        "correctAnswer": "Cardiology"
+      }
+    ]
+  }
+]
