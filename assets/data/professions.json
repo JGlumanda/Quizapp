@@ -76,5 +76,44 @@
         "correctAnswer": "Cardiology"
       }
     ]
+  },
+  {
+    "name": "Ich bin ein sehr sehr langer beruf",
+    "imageUrl": "assets/images/engineer.png",
+    "introText": "Engineers design, build, and maintain systems and structures.",
+    "details": [
+      {
+        "type": "image",
+        "content": "assets/images/engineer_work.png",
+        "layout": "imageLeft"
+      },
+      {
+        "type": "text",
+        "content": "Engineers apply scientific and mathematical principles to solve problems.",
+        "layout": "textNextToImage"
+      },
+      {
+        "type": "text",
+        "content": "They work in a variety of fields including civil, mechanical, electrical, and software engineering.",
+        "layout": "textNextToImage"
+      },
+      {
+        "type": "image",
+        "content": "assets/images/engineer_project.png",
+        "layout": "imageRight"
+      }
+    ],
+    "questions": [
+      {
+        "questionText": "What does an engineer do?",
+        "answers": ["Ich bin ein langer Text um eine Antwort zu beschreiben damit ich den worst case testen kann wie lang eine Antwortmöglichkeit sein kann.", "Teaches", "Heals", "Cooks"],
+        "correctAnswer": "Ich bin ein langer Text um eine Antwort zu beschreiben damit ich den worst case testen kann wie lang eine Antwortmöglichkeit sein kann."
+      },
+      {
+        "questionText": "Which field does not typically involve engineering?",
+        "answers": ["Civil", "Mechanical", "Electrical", "Literature"],
+        "correctAnswer": "Literature"
+      }
+    ]
   }
 ]

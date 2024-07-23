@@ -1,4 +1,3 @@
-// lib/screens/ProfessionScreen.dart
 import 'package:flutter/material.dart';
 import '../models/Profession.dart';
 import 'QuizScreen.dart';
@@ -40,41 +39,74 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
     double screenHeight = MediaQuery.of(context).size.height;
 
     LayoutOption layoutOption = parseLayoutOption(detail.layout);
-    Widget imageWidget = Image.asset(
-      detail.content,
-      width: screenWidth * 0.4,
-      height: screenHeight * 0.3,
-      fit: BoxFit.contain,
-    );
 
-    Widget textWidget = Expanded(
-      child: Text(
+    if (detail.type == 'image') {
+      Widget imageWidget = Image.asset(
         detail.content,
-        style: TextStyle(fontSize: 18),
-      ),
-    );
+        width: screenWidth * 0.4,
+        height: screenHeight * 0.3,
+        fit: BoxFit.contain,
+      );
 
-    List<Widget> rowChildren;
-    switch (layoutOption) {
-      case LayoutOption.imageLeft:
-        rowChildren = [imageWidget, SizedBox(width: 16.0), textWidget];
-        break;
-      case LayoutOption.imageRight:
-        rowChildren = [textWidget, SizedBox(width: 16.0), imageWidget];
-        break;
-      case LayoutOption.textNextToImage:
-      default:
-        rowChildren = [textWidget];
-        break;
+      switch (layoutOption) {
+        case LayoutOption.imageLeft:
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 16.0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                imageWidget,
+                SizedBox(width: 16.0),
+                Expanded(
+                  child: Text(
+                    'Image on left layout',
+                    style: TextStyle(fontSize: 18),
+                  ),
+                ),
+              ],
+            ),
+          );
+        case LayoutOption.imageRight:
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 16.0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Text(
+                    'Image on right layout',
+                    style: TextStyle(fontSize: 18),
+                  ),
+                ),
+                SizedBox(width: 16.0),
+                imageWidget,
+              ],
+            ),
+          );
+        case LayoutOption.textNextToImage:
+        default:
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                imageWidget,
+                SizedBox(height: 16.0),
+              ],
+            ),
+          );
+      }
+    } else if (detail.type == 'text') {
+      return Padding(
+        padding: const EdgeInsets.only(bottom: 16.0),
+        child: Text(
+          detail.content,
+          style: TextStyle(fontSize: 18),
+        ),
+      );
+    } else {
+      return Container();
     }
-
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 16.0),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: rowChildren,
-      ),
-    );
   }
 
   @override
@@ -130,7 +162,8 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
                           fit: BoxFit.contain,
                         ),
                         SizedBox(width: 16.0),
-                        Expanded(
+                        Flexible(
+                          fit: FlexFit.loose,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
