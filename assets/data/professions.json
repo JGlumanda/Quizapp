@@ -7,22 +7,22 @@
       {
         "type": "image",
         "content": "assets/images/engineer_work.png",
-        "layout": "imageLeft"
+        "layout": "imageRight"
       },
       {
         "type": "text",
         "content": "Engineers apply scientific and mathematical principles to solve problems.",
-        "layout": ""
-      },
-      {
-        "type": "text",
-        "content": "They work in a variety of fields including civil, mechanical, electrical, and software engineering.",
         "layout": "textNextToImage"
       },
       {
         "type": "image",
         "content": "assets/images/engineer_project.png",
-        "layout": ""
+        "layout": "imageLeft"
+      },
+      {
+        "type": "text",
+        "content": "They work in a variety of fields including civil, mechanical, electrical, and software engineering.",
+        "layout": "textNextToImage"
       }
     ],
     "questions": [

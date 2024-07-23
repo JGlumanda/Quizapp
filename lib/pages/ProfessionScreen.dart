@@ -79,16 +79,16 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
               ],
             ));
           }
-          i++; // Skip the next text element as it has been paired with the image
+          i++;
         } else {
-          if(layoutOption == LayoutOption.imageLeft){
+          if (layoutOption == LayoutOption.imageLeft) {
             contentWidgets.add(Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 imageWidget,
               ],
             ));
-          } else if(layoutOption == LayoutOption.imageRight) {
+          } else if (layoutOption == LayoutOption.imageRight) {
             contentWidgets.add(Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -104,6 +104,22 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
             ));
           }
         }
+      } else if (details[i].type == 'text') {
+        Widget textWidget = Expanded(
+          child: Padding(
+            padding: const EdgeInsets.only(left: 16.0),
+            child: Text(
+              details[i].content,
+              style: TextStyle(fontSize: 18),
+            ),
+          ),
+        );
+        contentWidgets.add(Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            textWidget,
+          ],
+        ));
       }
     }
     return contentWidgets;
