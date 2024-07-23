@@ -7,89 +7,6 @@
       {
         "type": "image",
         "content": "assets/images/engineer_work.png",
-        "layout": ""
-      },
-      {
-        "type": "text",
-        "content": "Engineers apply scientific and mathematical principles to solve problems. ich bin ein wirklich langer Text.ich bin ein wirklich langer Text.ich bin ein wirklich langer Text.ich bin ein wirklich langer Text.ich bin ein wirklich langer Text.ich bin ein wirklich langer Text",
-        "layout": ""
-      },
-      {
-        "type": "heading",
-        "content": "Engineering Fields",
-        "layout": "none"
-      },
-      {
-        "type": "image",
-        "content": "assets/images/engineer_project.png",
-        "layout": "imageLeft"
-      },
-      {
-        "type": "text",
-        "content": "They work in a variety of fields including civil, mechanical, electrical, and software engineering.",
-        "layout": "textNextToImage"
-      }
-    ],
-    "questions": [
-      {
-        "questionText": "What does an engineer do?",
-        "answers": ["Ich bin ein langer Text um eine Antwort zu beschreiben damit ich den worst case testen kann wie lang eine Antwortmöglichkeit sein kann.", "Teaches", "Heals", "Cooks"],
-        "correctAnswer": "Ich bin ein langer Text um eine Antwort zu beschreiben damit ich den worst case testen kann wie lang eine Antwortmöglichkeit sein kann."
-      },
-      {
-        "questionText": "Which field does not typically involve engineering?",
-        "answers": ["Civil", "Mechanical", "Electrical", "Literature"],
-        "correctAnswer": "Literature"
-      }
-    ]
-  },
-  {
-    "name": "Doctor",
-    "imageUrl": "assets/images/doctor.png",
-    "introText": "Doctors diagnose and treat illnesses, and provide medical care to patients.",
-    "details": [
-      {
-        "type": "image",
-        "content": "assets/images/doctor_clinic.png",
-        "layout": "imageLeft"
-      },
-      {
-        "type": "text",
-        "content": "Doctors can specialize in various fields such as cardiology, neurology, and pediatrics.",
-        "layout": "textNextToImage"
-      },
-      {
-        "type": "text",
-        "content": "They work in hospitals, clinics, and private practices.",
-        "layout": "textNextToImage"
-      },
-      {
-        "type": "image",
-        "content": "assets/images/doctor_surgery.png",
-        "layout": "imageRight"
-      }
-    ],
-    "questions": [
-      {
-        "questionText": "What is the primary role of a doctor?",
-        "answers": ["Design buildings", "Treat patients", "Write code", "Manage finances"],
-        "correctAnswer": "Treat patients"
-      },
-      {
-        "questionText": "Which of the following is a medical specialty?",
-        "answers": ["Cardiology", "Engineering", "Architecture", "Law"],
-        "correctAnswer": "Cardiology"
-      }
-    ]
-  },
-  {
-    "name": "Ich bin ein sehr sehr langer beruf",
-    "imageUrl": "assets/images/engineer.png",
-    "introText": "Engineers design, build, and maintain systems and structures.",
-    "details": [
-      {
-        "type": "image",
-        "content": "assets/images/engineer_work.png",
         "layout": "imageLeft"
       },
       {
@@ -98,26 +15,37 @@
         "layout": "textNextToImage"
       },
       {
-        "type": "text",
-        "content": "They work in a variety of fields including civil, mechanical, electrical, and software engineering.",
-        "layout": "textNextToImage"
+        "type": "heading",
+        "content": "Fields of Engineering"
       },
       {
         "type": "image",
-        "content": "assets/images/engineer_project.png",
+        "content": "assets/images/engineer_work.png"
+      },
+      {
+        "type": "text",
+        "content": "Engineers apply scientific and mathematical principles to solve problems."
+      },
+      {
+        "type": "image",
+        "content": "assets/images/engineer_work.png",
         "layout": "imageRight"
+      },
+      {
+        "type": "text",
+        "content": "They work in various fields including civil, mechanical, and software engineering."
       }
     ],
     "questions": [
       {
         "questionText": "What does an engineer do?",
-        "answers": ["Ich bin ein langer Text um eine Antwort zu beschreiben damit ich den worst case testen kann wie lang eine Antwortmöglichkeit sein kann.", "Teaches", "Heals", "Cooks"],
-        "correctAnswer": "Ich bin ein langer Text um eine Antwort zu beschreiben damit ich den worst case testen kann wie lang eine Antwortmöglichkeit sein kann."
-      },
-      {
-        "questionText": "Which field does not typically involve engineering?",
-        "answers": ["Civil", "Mechanical", "Electrical", "Literature"],
-        "correctAnswer": "Literature"
+        "answers": [
+          "Designs",
+          "Teaches",
+          "Heals",
+          "Cooks"
+        ],
+        "correctAnswer": "Designs"
       }
     ]
   }
