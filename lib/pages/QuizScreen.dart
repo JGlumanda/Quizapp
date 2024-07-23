@@ -74,7 +74,9 @@ class _QuizScreenState extends State<QuizScreen> {
     if (!showResult) {
       return selectedAnswer == answer ? Colors.blueAccent : Colors.white;
     } else {
-      return answer == questions[currentQuestionIndex].correctAnswer ? Colors.greenAccent : Colors.redAccent;
+      return answer == questions[currentQuestionIndex].correctAnswer
+          ? Colors.greenAccent
+          : Colors.redAccent;
     }
   }
 
@@ -121,7 +123,8 @@ class _QuizScreenState extends State<QuizScreen> {
                         padding: const EdgeInsets.all(16.0),
                         child: Text(
                           questions[currentQuestionIndex].questionText,
-                          style: TextStyle(fontSize: screenHeight * 0.03), // Adjust font size based on screen height
+                          style: TextStyle(fontSize: screenHeight * 0.03),
+                          // Adjust font size based on screen height
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -131,26 +134,40 @@ class _QuizScreenState extends State<QuizScreen> {
                     absorbing: showResult,
                     child: Column(
                       children: [
-                        for (int i = 0; i < questions[currentQuestionIndex].answers.length; i += 2)
+                        for (int i = 0;
+                            i < questions[currentQuestionIndex].answers.length;
+                            i += 2)
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               for (int j = 0; j < 2; j++)
-                                if (i + j < questions[currentQuestionIndex].answers.length)
+                                if (i + j <
+                                    questions[currentQuestionIndex]
+                                        .answers
+                                        .length)
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: SizedBox(
-                                      width: screenWidth * 0.45,  // Increase default width
-                                      height: screenHeight * 0.15,  // Increase default height
+                                      width: screenWidth * 0.45,
+                                      // Increase default width
+                                      height: screenHeight * 0.15,
+                                      // Increase default height
                                       child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
-                                          backgroundColor: getButtonColor(questions[currentQuestionIndex].answers[i + j]),
+                                          backgroundColor: getButtonColor(
+                                              questions[currentQuestionIndex]
+                                                  .answers[i + j]),
                                         ),
-                                        onPressed: () => selectAnswer(questions[currentQuestionIndex].answers[i + j]),
+                                        onPressed: () => selectAnswer(
+                                            questions[currentQuestionIndex]
+                                                .answers[i + j]),
                                         child: Text(
-                                          questions[currentQuestionIndex].answers[i + j],
+                                          questions[currentQuestionIndex]
+                                              .answers[i + j],
                                           textAlign: TextAlign.center,
-                                          style: TextStyle(fontSize: screenHeight * 0.025), // Slightly smaller font size
+                                          style: TextStyle(
+                                              fontSize: screenHeight *
+                                                  0.025), // Slightly smaller font size
                                         ),
                                       ),
                                     ),
@@ -161,10 +178,14 @@ class _QuizScreenState extends State<QuizScreen> {
                     ),
                   ),
                   Container(
-                    width: screenWidth * 0.6,  // Increase width for the submit button
-                    height: screenHeight * 0.08,  // Standard height for the submit button
+                    width: screenWidth * 0.6,
+                    // Increase width for the submit button
+                    height: screenHeight * 0.08,
+                    // Standard height for the submit button
                     child: ElevatedButton(
-                      onPressed: selectedAnswer != null && !showResult ? submitAnswer : null,
+                      onPressed: selectedAnswer != null && !showResult
+                          ? submitAnswer
+                          : null,
                       child: Text('Frage beantworten Button'),
                     ),
                   ),

@@ -20,8 +20,7 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
   @override
   void initState() {
     super.initState();
-    selectedProfession =
-        widget.professions[0]; // Default to the first profession
+    selectedProfession = widget.professions[0];
   }
 
   LayoutOption parseLayoutOption(String? layout) {
@@ -113,6 +112,7 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
             child: Text(
               details[i].content,
               style: const TextStyle(fontSize: 18),
+              textAlign: TextAlign.center,
             ),
           ),
         );
@@ -129,10 +129,11 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
           padding: const EdgeInsets.only(bottom: 16.0),
           child: Text(
             details[i].content,
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
         ));
       }
+      contentWidgets.add(SizedBox(height: 64.0));
     }
     return contentWidgets;
   }
@@ -144,7 +145,7 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Uhlmann Quizapp'),
+        title: const Text('Uhlmann Quizapp'),
       ),
       body: Row(
         children: [
@@ -180,10 +181,10 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
                   children: [
                     Text(
                       selectedProfession.name,
-                      style:
-                          TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                          fontSize: 32, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Row(
                       children: [
                         Image.asset(
@@ -192,7 +193,7 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
                           height: screenHeight * 0.3,
                           fit: BoxFit.contain,
                         ),
-                        SizedBox(width: 16.0),
+                        const SizedBox(width: 16.0),
                         Flexible(
                           fit: FlexFit.loose,
                           child: Column(
@@ -200,9 +201,9 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
                             children: [
                               Text(
                                 selectedProfession.introText,
-                                style: TextStyle(fontSize: 18),
+                                style: const TextStyle(fontSize: 18),
                               ),
-                              SizedBox(height: 16.0),
+                              const SizedBox(height: 16.0),
                               ElevatedButton(
                                 onPressed: () {
                                   Navigator.push(
@@ -213,14 +214,15 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
                                     ),
                                   );
                                 },
-                                child: Text('Button um das Quiz zu starten'),
+                                child:
+                                    const Text('Button um das Quiz zu starten'),
                               ),
                             ],
                           ),
                         ),
                       ],
                     ),
-                    SizedBox(height: 16.0),
+                    const Divider(height: 64),
                     ...buildDetailContents(selectedProfession.details),
                   ],
                 ),

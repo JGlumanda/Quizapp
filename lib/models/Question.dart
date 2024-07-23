@@ -3,7 +3,10 @@ class Question {
   final List<String> answers;
   final String correctAnswer;
 
-  Question({required this.questionText, required this.answers, required this.correctAnswer});
+  Question(
+      {required this.questionText,
+      required this.answers,
+      required this.correctAnswer});
 
   factory Question.fromJson(Map<String, dynamic> json) {
     var answersJson = json['answers'] as List;

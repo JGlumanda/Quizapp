@@ -17,10 +17,12 @@ class Profession {
 
   factory Profession.fromJson(Map<String, dynamic> json) {
     var questionsJson = json['questions'] as List;
-    List<Question> questionList = questionsJson.map((i) => Question.fromJson(i)).toList();
+    List<Question> questionList =
+        questionsJson.map((i) => Question.fromJson(i)).toList();
 
     var detailsJson = json['details'] as List;
-    List<Detail> detailList = detailsJson.map((i) => Detail.fromJson(i)).toList();
+    List<Detail> detailList =
+        detailsJson.map((i) => Detail.fromJson(i)).toList();
 
     return Profession(
       name: json['name'],
