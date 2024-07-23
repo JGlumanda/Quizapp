@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../models/Profession.dart';
 import 'QuizScreen.dart';
 
@@ -19,7 +20,8 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
   @override
   void initState() {
     super.initState();
-    selectedProfession = widget.professions[0]; // Default to the first profession
+    selectedProfession =
+        widget.professions[0]; // Default to the first profession
   }
 
   LayoutOption parseLayoutOption(String? layout) {
@@ -34,79 +36,77 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
     }
   }
 
-  Widget buildDetailContent(Detail detail) {
-    double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
+  List<Widget> buildDetailContents(List<Detail> details) {
+    List<Widget> contentWidgets = [];
+    for (int i = 0; i < details.length; i++) {
+      if (details[i].type == 'image') {
+        LayoutOption layoutOption = parseLayoutOption(details[i].layout);
+        Widget imageWidget = Image.asset(
+          details[i].content,
+          width: MediaQuery.of(context).size.width * 0.4,
+          height: MediaQuery.of(context).size.height * 0.3,
+          fit: BoxFit.contain,
+        );
 
-    LayoutOption layoutOption = parseLayoutOption(detail.layout);
-
-    if (detail.type == 'image') {
-      Widget imageWidget = Image.asset(
-        detail.content,
-        width: screenWidth * 0.4,
-        height: screenHeight * 0.3,
-        fit: BoxFit.contain,
-      );
-
-      switch (layoutOption) {
-        case LayoutOption.imageLeft:
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 16.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                imageWidget,
-                SizedBox(width: 16.0),
-                Expanded(
-                  child: Text(
-                    'Image on left layout',
-                    style: TextStyle(fontSize: 18),
-                  ),
-                ),
-              ],
+        if (i + 1 < details.length &&
+            details[i + 1].type == 'text' &&
+            parseLayoutOption(details[i + 1].layout) ==
+                LayoutOption.textNextToImage) {
+          Widget textWidget = Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 16.0),
+              child: Text(
+                details[i + 1].content,
+                style: TextStyle(fontSize: 18),
+              ),
             ),
           );
-        case LayoutOption.imageRight:
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 16.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: Text(
-                    'Image on right layout',
-                    style: TextStyle(fontSize: 18),
-                  ),
-                ),
-                SizedBox(width: 16.0),
-                imageWidget,
-              ],
-            ),
-          );
-        case LayoutOption.textNextToImage:
-        default:
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+
+          if (layoutOption == LayoutOption.imageLeft) {
+            contentWidgets.add(Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 imageWidget,
-                SizedBox(height: 16.0),
+                textWidget,
               ],
-            ),
-          );
+            ));
+          } else if (layoutOption == LayoutOption.imageRight) {
+            contentWidgets.add(Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                textWidget,
+                imageWidget,
+              ],
+            ));
+          }
+          i++; // Skip the next text element as it has been paired with the image
+        } else {
+          if(layoutOption == LayoutOption.imageLeft){
+            contentWidgets.add(Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                imageWidget,
+              ],
+            ));
+          } else if(layoutOption == LayoutOption.imageRight) {
+            contentWidgets.add(Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                imageWidget,
+              ],
+            ));
+          } else {
+            contentWidgets.add(Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                imageWidget,
+              ],
+            ));
+          }
+        }
       }
-    } else if (detail.type == 'text') {
-      return Padding(
-        padding: const EdgeInsets.only(bottom: 16.0),
-        child: Text(
-          detail.content,
-          style: TextStyle(fontSize: 18),
-        ),
-      );
-    } else {
-      return Container();
     }
+    return contentWidgets;
   }
 
   @override
@@ -127,7 +127,9 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
             child: ListView(
               children: widget.professions.map((profession) {
                 return Container(
-                  color: profession == selectedProfession ? Colors.blue.withOpacity(0.2) : Colors.transparent,
+                  color: profession == selectedProfession
+                      ? Colors.blue.withOpacity(0.2)
+                      : Colors.transparent,
                   child: ListTile(
                     title: Text(profession.name),
                     onTap: () {
@@ -150,7 +152,8 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
                   children: [
                     Text(
                       selectedProfession.name,
-                      style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 16.0),
                     Row(
@@ -177,7 +180,8 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => QuizScreen(profession: selectedProfession),
+                                      builder: (context) => QuizScreen(
+                                          profession: selectedProfession),
                                     ),
                                   );
                                 },
@@ -189,9 +193,7 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
                       ],
                     ),
                     SizedBox(height: 16.0),
-                    ...selectedProfession.details.map((detail) {
-                      return buildDetailContent(detail);
-                    }).toList(),
+                    ...buildDetailContents(selectedProfession.details),
                   ],
                 ),
               ),
