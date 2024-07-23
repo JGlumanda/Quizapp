@@ -7,12 +7,17 @@
       {
         "type": "image",
         "content": "assets/images/engineer_work.png",
-        "layout": "imageRight"
+        "layout": ""
       },
       {
         "type": "text",
         "content": "Engineers apply scientific and mathematical principles to solve problems.",
-        "layout": "textNextToImage"
+        "layout": ""
+      },
+      {
+        "type": "heading",
+        "content": "Engineering Fields",
+        "layout": "none"
       },
       {
         "type": "image",

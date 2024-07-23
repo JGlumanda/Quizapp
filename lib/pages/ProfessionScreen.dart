@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../models/Profession.dart';
 import 'QuizScreen.dart';
 
-enum LayoutOption { imageLeft, imageRight, textNextToImage }
+enum LayoutOption { imageLeft, imageRight, textNextToImage, nothing }
 
 class ProfessionScreen extends StatefulWidget {
   final List<Profession> professions;
@@ -31,8 +31,9 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
       case 'imageRight':
         return LayoutOption.imageRight;
       case 'textNextToImage':
-      default:
         return LayoutOption.textNextToImage;
+      default:
+        return LayoutOption.nothing;
     }
   }
 
@@ -52,12 +53,13 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
             details[i + 1].type == 'text' &&
             parseLayoutOption(details[i + 1].layout) ==
                 LayoutOption.textNextToImage) {
+          String text = details[i + 1].content;
           Widget textWidget = Expanded(
             child: Padding(
               padding: const EdgeInsets.only(left: 16.0),
               child: Text(
-                details[i + 1].content,
-                style: TextStyle(fontSize: 18),
+                text,
+                style: const TextStyle(fontSize: 18),
               ),
             ),
           );
@@ -110,15 +112,25 @@ class _ProfessionScreenState extends State<ProfessionScreen> {
             padding: const EdgeInsets.only(left: 16.0),
             child: Text(
               details[i].content,
-              style: TextStyle(fontSize: 18),
+              style: const TextStyle(fontSize: 18),
             ),
           ),
         );
-        contentWidgets.add(Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            textWidget,
-          ],
+        contentWidgets.add(IntrinsicHeight(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              textWidget,
+            ],
+          ),
+        ));
+      } else if (details[i].type == 'heading') {
+        contentWidgets.add(Padding(
+          padding: const EdgeInsets.only(bottom: 16.0),
+          child: Text(
+            details[i].content,
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
         ));
       }
     }
