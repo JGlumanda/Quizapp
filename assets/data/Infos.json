@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Roboter",
+    "imageUrl": "assets/images/engineer.png",
+    "introText": "Engineers design, build, and maintain systems and structures.",
+    "details": [
+      {
+        "type": "image",
+        "content": "assets/images/engineer_work.png",
+        "layout": "imageLeft"
+      },
+      {
+        "type": "text",
+        "content": "Engineers apply scientific and mathematical principles to solve problems.",
+        "layout": "textNextToImage"
+      },
+      {
+        "type": "heading",
+        "content": "Fields of Engineering"
+      },
+      {
+        "type": "image",
+        "content": "assets/images/engineer_work.png"
+      },
+      {
+        "type": "text",
+        "content": "Engineers apply scientific and mathematical principles to solve problems."
+      },
+      {
+        "type": "image",
+        "content": "assets/images/engineer_work.png",
+        "layout": "imageRight"
+      },
+      {
+        "type": "text",
+        "content": "They work in various fields including civil, mechanical, and software engineering."
+      }
+    ]
+  }
+]

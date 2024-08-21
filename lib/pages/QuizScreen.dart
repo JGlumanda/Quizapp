@@ -41,7 +41,7 @@ class _QuizScreenState extends State<QuizScreen> {
       score++;
     }
 
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 2), () {
       setState(() {
         showResult = false;
         selectedAnswer = null;
@@ -52,15 +52,16 @@ class _QuizScreenState extends State<QuizScreen> {
           showDialog(
             context: context,
             builder: (context) => AlertDialog(
-              title: Text('Quiz Finished'),
-              content: Text('Your score is $score/${questions.length}'),
+              title: const Text('Quiz abgeschlossen!'),
+              content: Text(
+                  'Richtig beantwortete Fragen: $score/${questions.length}'),
               actions: [
                 TextButton(
                   onPressed: () {
                     Navigator.pop(context);
                     Navigator.pop(context);
                   },
-                  child: Text('OK'),
+                  child: const Text('OK'),
                 ),
               ],
             ),
@@ -186,7 +187,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       onPressed: selectedAnswer != null && !showResult
                           ? submitAnswer
                           : null,
-                      child: Text('Frage beantworten Button'),
+                      child: const Text('Frage beantworten.'),
                     ),
                   ),
                 ],
